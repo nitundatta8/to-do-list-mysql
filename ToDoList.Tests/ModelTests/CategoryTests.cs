@@ -3,15 +3,17 @@ using ToDoList.Models;
 using System.Collections.Generic;
 using System;
 
+
 namespace ToDoList.Tests
 {
-  [TestClass]
+  //[TestClass]
   public class CategoryTest : IDisposable
   {
 
     public void Dispose()
     {
       Category.ClearAll();
+
     }
 
     [TestMethod]
@@ -38,6 +40,7 @@ namespace ToDoList.Tests
     [TestMethod]
     public void GetId_ReturnsCategoryId_Int()
     {
+
       //Arrange
       string name = "Test Category";
       Category newCategory = new Category(name);
